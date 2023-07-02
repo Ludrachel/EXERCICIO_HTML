@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<title>HTML 5 - Exemplo 01</title>
+</head>
+<body>
+	<h1>HTML 5 - Exemplo 01</h1>
+	<form name="formulario" id="formulario" action="cadastro.html" 
+	method="post">
+		<fieldset>
+			<legend>Parte 1</legend>
+			<label>URL : </label>
+			<input name="url" id="url" type="url" required autofocus />
+			<br/><br/>
+			<label>E-mail : </label>
+			<input name="email" id="email" type="email" required />
+			<br/><br/>
+			<label>Mes/ano : </label>
+			<input name="mesano" id="mesano" type="month" />
+			<br/><br/>
+			<label>Data : </label>
+			<input name="data" id="data" type="date" required />
+			<br/><br/>
+			<label>Hora : </label>
+			<input name="hora" id="hora" type="time" />
+			<br/><br/>
+			<label>Semana : </label>
+			<input name="semana" id="semana" type="week" />
+			<br/><br/>
+		</fieldset>
+		<fieldset>
+			<legend align="center">Parte 2</legend>
+			<label>Numero : </label>
+			<input name="numero" id="numero" type="number" min="1" max="10" required />
+			<br/><br/>
+			<label>Cor : </label>
+			<input name="cor" id="cor" type="color" />
+			<br/><br/>
+			<label>Numero: <input type="text" pattern="[0-9]{3}" 
+			id="numero" required title="Digite 3 digitos"/></label><br/><br/>	
+		</fieldset><br/>
+		<button type="submit" name="btn_confirmar">Confirmar</button>
+		<button type="reset" name="btn_limpar">Limpar</button>						
+		</form>
+	</body>
+</html>
